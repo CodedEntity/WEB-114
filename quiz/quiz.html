@@ -1,0 +1,109 @@
+<!-- Bolla, Vishnu - 06|27|2026 -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>My JS Quiz Game</title>
+        <script src="quiz.js" defer></script>
+    </head>
+
+    <style>
+
+        :root {
+            background-color: light-dark(#FFFEFF, #000000);
+            color-scheme: light dark;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        li {
+            margin: 1rem;
+        }
+
+        .question {
+            list-style-type: upper-roman;
+        }
+
+        .answer {
+            list-style-type: none;
+        }
+    </style>
+
+    <body>
+        <h1 class=".no-background">Personal Quiz: How Much Do You Know About Me?</h1>
+        <h3>Open the Console (F12) to see detailed results.</h3>
+
+        <h4>Questions</h4>
+
+        <ol>
+            <li class="question">Name a real-life situation where you would need to use an `if` statement.
+            
+                <li class="answer">
+                    IF the current room temperature drops below 68°F, the system turns on the heater. 
+                    ELSE, the heater stays off to save energy.
+                </li>
+            </li>
+
+            <li class="question">Explain the difference between `==` and `===`. Why is strict equality usually better?
+            
+                <li class="answer">
+                    == (Loose Equality): Compares only the values of two items. 
+                    If the data types are different (like a number and a text string), 
+                    JavaScript automatically converts one type to match the other before comparing. 
+                    For example, 5 == "5" is true.
+                </li>
+                    
+                <li class="answer">
+                    === (Strict Equality): Compares both the values and the data types without converting anything. 
+                    For example, 5 === "5" is false because a number is not the same data type as a text string.
+                </li>
+
+                <li class="answer">
+                    Why strict equality is better: 
+                </li>
+
+                <li class="answer">
+                    It prevents unexpected bugs. Loose equality can hiddenly change your data types behind the scenes, 
+                    leading to logic errors that are very difficult to track down. Strict equality ensures your conditions are precise.
+                </li>
+            </li>
+
+            <li class="question">Give an example (in your own words) of when you would use `&&` (AND) vs `||` (OR).
+            
+                <li class="answer">
+                    && (AND) when all conditions are to be true.
+                </li>
+                
+                <li class="answer">
+                    Example: Booking a rental car. You can only rent the vehicle if you have a valid driver's license AND you are over 25 years old. 
+                    If either condition is missing, you get rejected.
+                </li>
+
+                <li class="answer">
+                    || (OR) when only one of the conditions needs to be true. Such as movie ticket discounts. 
+                    You get a cheap ticket if you are a student OR if you are a senior citizen. 
+                    You do not need to be both; meeting just one requirement unlocks the discount.
+                </li>
+            </li>
+
+            <li class="question">What does the `!` (NOT) operator do? Give an example of a situation you would use it.
+            
+                <li class="answer">
+                    The ! operator reverses a boolean value. It turns true into false, and false into true. 
+                    It essentially checks if a condition is not happening.
+                </li>
+
+                <li class="answer">    
+                    Such as Website user permissions. You can use it to block a user from viewing a premium article if they are not logged in. 
+                    Although I do not know the whole of the code, part of the code would look like: if (!isLoggedIn) { }. 
+                    It reads smoothly as: "If the user is NOT logged in, show the login pop-up."
+                </li>
+            </li>
+
+        </ol>
+
+    </body>
+</html>
