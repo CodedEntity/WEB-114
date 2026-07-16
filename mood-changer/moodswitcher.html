@@ -1,0 +1,42 @@
+<!-- Bolla, Vishnu | 15 July 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mood Changer</title>
+
+        <link href="moods.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <section>
+            <h2>Javascript Questions</h2>
+            <p><strong>Why is textContent safer than innerHTML?</strong></p>
+            <p>textContent treats all inputs as raw text strings. It prevents malicious script execution from dangerous user data input.</p>
+            <br>
+            <p><strong>How are HTML elements connected to JavaScript variables using DOM selection?</strong></p>
+            <p>They connect via query methods like document.querySelector(). This targets structural markup IDs or classes and maps them to a variable reference.</p>
+            <br>
+            <p><strong>What would happen to the text box with id="text" if I added this line to the code above it: text.textContent = "Hello!"</strong></p>
+            <p>The text content inside that target element would instantly overwrite to display the word "Hello!".</p>
+            <br>
+        </section>
+
+                <h1 id="mood-title">Choose a Mood!</h1>
+                <p>Click A Mood To Change The Theme!</p>
+
+        <div id="buttons-container">
+            <button id="happy-btn" class="mood-btn">Happy</button>
+            <button id="calm-btn" class="mood-btn">Calm</button>
+            <button id="angry-btn" class="mood-btn">Angry</button>
+            <button id="sleepy-btn" class="mood-btn">Sleepy</button>
+        </div>
+        
+        <p id="quote"></p>
+
+        <script src="mood.js" defer></script>
+    </body>
+</html>
