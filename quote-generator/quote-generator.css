@@ -1,0 +1,74 @@
+/* Bolla, Vishnu | 23 July 2026 */
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.quoteBox {
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px black;
+    max-width: 550px;
+    width: 90%;
+    text-align: center;
+}
+
+.darkTheme {
+    background-color: black !important;
+    color: #ecf0f1 !important;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: black;
+    margin: 20px 0;
+}
+
+.darkTheme p {
+    color: white;
+}
+
+small {
+    display: block;
+    color: grey;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: skyblue;
+}
+
+.second-btn {
+    background-color: grey;
+}
+
+.second-btn:hover {
+    background-color: grey;
+}
+/* 
+Card layout centered on the screen using Flexbox. 
+Plain color scheme of white, grey, and skyblue, minor formatting for now.
+*/
