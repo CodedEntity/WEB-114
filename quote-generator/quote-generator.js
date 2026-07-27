@@ -30,7 +30,7 @@ function randomQuote() {
 
 document.getElementById("quotebtn").addEventListener("click", randomQuote);
 
-document.getElementById("themeBtn").addEventListener("click", ); // For Second Event Unfinished)
+document.getElementById("themeBtn").addEventListener("click", ); // For Second Event (Unfinished)
 
 /*
 Has a list of three quotes, assigns the quotes a random number to generate one after another in a random order.
