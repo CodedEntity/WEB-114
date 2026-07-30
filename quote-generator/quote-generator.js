@@ -28,7 +28,7 @@ function randomQuote() {
 // Changing style through Javascript
 // Code (Second Event)
 
-document.getElementById("quotebtn").addEventListener("click", randomQuote);
+document.getElementById("quoteBtn").addEventListener("click", randomQuote);
 
 document.getElementById("themeBtn").addEventListener("click", ); // For Second Event (Unfinished)
 
